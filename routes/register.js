@@ -3,8 +3,12 @@ var router = express.Router();
 
 /* GET register listing. */
 router.get('/', function(req, res, next) {
-  res.send("200");
-  console.log("test");
+  res.send("response - ");
+});
+
+router.post('/', function(req, res, next) {
+  res.send(req.body);
+  console.log(req.body);
 });
 
 module.exports = router;
